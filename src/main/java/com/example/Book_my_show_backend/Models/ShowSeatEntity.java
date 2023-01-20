@@ -23,7 +23,7 @@ public class ShowSeatEntity {
     private Date bookedAt;
 
     @ManyToOne
-    @JoinTable
+    @JoinColumn
     private ShowEntity show;
 
     @ManyToOne

@@ -15,7 +15,7 @@ public class TheatreSeatEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(columnDefinition = "seat_no",nullable = false)
+
     private String seatNo;
 
     @Enumerated(value = EnumType.STRING)
@@ -23,7 +23,14 @@ public class TheatreSeatEntity {
 
     private int rate;
 
+
     @ManyToOne
     @JoinColumn
     private TheatreEntity theatre;
+
+    public TheatreSeatEntity(String seatNo,SeatType seatType,int rate){
+        this.seatNo = seatNo;
+        this.seatType = seatType;
+        this.rate = rate;
+    }
 }
