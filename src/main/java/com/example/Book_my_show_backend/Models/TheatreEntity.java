@@ -3,11 +3,15 @@ package com.example.Book_my_show_backend.Models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name="theatre")
+@Data
+@NoArgsConstructor
 @Builder
 @AllArgsConstructor
 public class TheatreEntity {
@@ -33,6 +37,6 @@ public class TheatreEntity {
     List<TheatreSeatEntity> theatreSeatEntityList;
 
 
-    public void setTheatreSeatEntityList(List<TheatreSeatEntity> theatreSeats) {
-    }
+//    public void setTheatreSeatEntityList(List<TheatreSeatEntity> theatreSeats) {
+//    }
 }

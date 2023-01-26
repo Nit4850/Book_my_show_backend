@@ -19,4 +19,11 @@ public class TheatreController {
     public String addTheatre(@RequestBody TheatreRequestDto theatreRequestDto){
         return theatreService.createTheatre(theatreRequestDto);
     }
+
+//    API  get theatre by theatreId
+
+
+//    API get all theatres
+
+
 }
